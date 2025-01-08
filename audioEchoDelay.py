@@ -22,7 +22,7 @@ class AudioEchoApp:
     def setup_ui(self):
         """Set up the graphical user interface components."""
         self.root.title("Audio Echo & Delay Application")
-        self.root.geometry("400x300")
+        self.root.geometry("350x300")
 
         # Register drag-and-drop support
         self.root.drop_target_register(DND_FILES)
@@ -43,14 +43,14 @@ class AudioEchoApp:
         self.decay_entry = tk.Entry(self.root)  # Entry widget for decay
         self.decay_entry.pack()
 
-        save_button = tk.Button(self.root, text="Save File", command=self.save_file)
-        save_button.pack(pady=10)
-
         play_button = tk.Button(self.root, text="Play", command=self.play_sound)
-        play_button.pack(side=tk.LEFT, padx=5)
+        play_button.place(x=75, y=180)
 
         stop_button = tk.Button(self.root, text="Stop", command=self.stop_sound)
-        stop_button.pack(side=tk.RIGHT, padx=5)
+        stop_button.place(x=238, y=180)
+
+        save_button = tk.Button(self.root, text="Save File", command=self.save_file)
+        save_button.place(x=150, y=230)
 
     def load_audio(self, file_path):
         """
