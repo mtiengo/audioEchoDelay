@@ -22,7 +22,14 @@ To run this application, ensure you have the following Python libraries installe
 - `tkinterdnd2`
 - `pygame`
 
-You can install the required packages using pip:
+Install the required packages:
 
 ```bash
 pip install numpy soundfile pygame tkinterdnd2
+```
+
+## Clone the repository:
+   ```bash
+   git clone https://github.com/mtiengo/audioEchoDelay.git
+   cd audioEchoDelay
+```
